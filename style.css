@@ -27,6 +27,7 @@ main {
 }
 
 .heading-text {
+  float: left;
   font-size: 4.4rem;
   font-weight: 700;
   margin-bottom: 2rem;
