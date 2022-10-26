@@ -270,7 +270,7 @@ a:visited {
   }
 
   .fourth-board::before {
-    content: url(img/res/Rectangle\ 42.svg);
+    content: url(img/res/Polygon\ 10.svg);
     display: block;
     position: absolute;
     top: -4rem;
