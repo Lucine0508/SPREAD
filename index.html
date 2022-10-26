@@ -1,188 +1,284 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>THAT'S ENTERTAINMENT!</title>
-</head>
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-<body>
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 
+main {
+  max-width: 122.8rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
 
+.aside {
+  padding: 2rem;
+  padding-top: 0;
+}
 
+.author {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
 
-  <main>
+.items {
+  list-style: none;
+}
 
-    <section class="aside">
+.items li {
+  font-size: 2rem;
+  font-style: italic;
+  color: #434343;
+  margin-bottom: 3rem;
+}
 
-      <div class="nav">
-        <a href="#one">
-          <div class="man">
-            <span class="circle">
-              <img src="img/Ellipse 12.png" alt="">
-            </span>
-          </div>
-        </a>
-        <a href="#two">
-          <div class="man man-1">
-            <span class="circle">
-              <img src="img/Polygon 5.svg" alt="">
-            </span>
-          </div>
-        </a>
-        <a href="#three">
-          <div class="man man-2">
-            <span class="circle">
-              <img src="img/Polygon 6.svg" alt="">
-            </span>
-          </div>
-        </a>
-        <a href="#four">
-          <div class="man man-3">
-            <span class="circle">
-              <img src="img/Rectangle 38.svg" alt="">
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="head-section">
-        <h1 class="heading-text">THAT'S
-          ENTERTAINMENT!</h1>
-        <div class="author">by Ian Lynam</div>
-        <ul class="items">
-          <li>February 5 – March 19, 2016</li>
+.main {
+  padding: 2rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-          <li>Coni Wolf Gallery at Marketview Arts 37 W Philadelphia St. York, Pennsylvania 17401 (Map)</li>
+.heading-text {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #6A6C6E
+}
 
-          <li>Opening: February 5, 2016 at 5:00pm</li>
+.first-board {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+  background-color: #D3647B;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #FAFAFA;
+}
 
-          <li>Lecture: February 4, 2016 at 7:00pm</li>
+.first-board::before {
+  content: url(img/Ellipse\ 12.png);
+  width: 1000%;
+  display: block;
+  position: absolute;
+  top: -3rem;
+}
 
-          <li>DeMeester Recital Hall in Wolf Hall York College of Pennsylvania (Map)</li>
-        </ul>
-      </div>
-    </section>
-    <section class="main">
-      <div class="image-container">
-        <img src="img/Group 32.png" alt="">
-      </div>
-      <p class="first-board" id="one">
-        That's Entertainment!:
-        Graphic Design in the Neoliberal Era
-      </p>
-      <article>
-        <p>
-          Graphic design culture at large has the potential to be intellectual and critical in nature, yet the
-          individuals
-          and
-          groups that operate within the sphere of cultural production and assorted economies attached to graphic design
-          consistently ignore intellectualism as operational methodology.
-        </p>
-        <p>
-          This exhibition is the opposite—within, I attempt to suggest some of the difficulties that both the public and
-          design
-          practitioners are facing with the development of design in the Neoliberal Era.
-        </p>
-      </article>
-      <p class="second-board" id="two">
-        Format follows function:
-      </p>
-      <article>
-        <p>
-          Most of the formal and aesthetic attributes of the new Global Style
-          are lifted directly from the International Style. White space backgrounds, sans serif typefaces, minimalist
-          asymmetrically balanced compositions with limited
-          color palette.
+article {
+  margin-bottom: 5rem;
+}
 
-        </p>
-        <p>
-          No extraneous decoration, ornament or complex patters, A love of simple geometric shapes. The one notable
-          exception is
-          the grid.It’s not that the grid is no longer there—it’s that the grid is no longer visible or even detectable.
-        </p>
-        <p>
-          It is embedded in the 0’s and 1’s and x and y coordinates of digital space… just like the movie Tron, the
-          digital
-          environment is built on a grid (it just doesn’t glow like neon).
-        </p>
-      </article>
-      <p class="third-board" id="three">
-        Cloud as site:
-      </p>
-      <article>
-        <p>
-          Encircled by the polyphonic ‘mist’ of the posters is an on-demand replica of the Free Speech Monument erected
-          at the
-          University of California, Berkeley—a physical celebration and memorial to the Free Speech movement there. It
-          reads:
-        </p>
-        <p>
-          “THIS SOIL AND THE AIR SPACE EXTENDING ABOVE IT SHALL NOT BE A PART OF ANY NATION AND SHALL NOT BE SUBJECT TO
-          ANY
-          ENTITY’S JURISDICTION.”
-        </p>
-        <p>
-          The original monument, Mark Brest van Kempen’s “Column of Earth and Air”, has no legal bearing—it is merely a
-          monument
-          to the notion of free speech and is not a true autonomous zone.
-        </p>
-      </article>
-      <p class="fourth-board" id="four">
-        Complications:
-      </p>
-      <article>
-        <p>
-          Economist Tyler Cowen wrote in his 2009 book Creative Destruction: How Globalization Is Changing the World's
-          Cultures
-          that:
-        </p>
-        <p>
-          Critics and experts tend to be most effective when the evaluated item is large in value, relative to the
-          effort required
-          to assess it. Experts are hired to assess the quality of diamonds, but not the quality of brass.
+article p {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 120%;
+}
 
-        </p>
-        <p>
-          We buy Consumer Reports to evaluate new cars or stereos on the market, but not new brands of thumbtacks or
-          paper clips.
-        </p>
-        <p>
-          We buy Consumer Reports to evaluate new cars or stereos on the market, but not new brands of thumbtacks or
-          paper
-          clips.
-        </p>
-        <p>The role of the critic in contemporary society, especially in terms of graphic design, is shifting in that
-          the perceived
-          value of design seems to be increasing socially, whereas the economic value of design is increasingly
-          atomized,
-          fragmented, compartmentalized and destabilized.</p>
-      </article>
-      <p class="fith-board">
-        Further reading:
-      </p>
-      <ul class="items">
-        <li><a href="https://www.amazon.com/gp/product/B00D5TRR7M/ref=dp-kindle-redirect?ie=UTF8&btkr=1">Enlightenment
-            2.0 by Joseph Heath</a></li>
-        <li><a href="https://www.amazon.com/gp/product/B009TMWDW8/ref=dp-kindle-redirect?ie=UTF8&btkr=1">The Efficient
-            Society by Joseph Heath</a></li>
-        <li><a href="https://www.slanted.de/product/slanted-22-art-type-pre-order/">The Global Style by Jeffery
-            Keedy</a></li>
-        <li><a href="https://shop.grafik.net/category/feature/critical-everything">Critical Everything by Francisco
-            Laranjo</a></li>
-        <li><a
-            href="http://www.strelka.com/en/press/books/can-jokes-bring-down-governmentsbrmemes-design-and-politics">Can
-            Jokes Bring Down Governments? Memes, Design & Politics by Metahaven</a></li>
-      </ul>
-    </section>
-  </main>
-</body>
+.second-board {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+  background-color: #AC6ACB;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #FAFAFA;
+}
 
-</html>
+.second-board::after {
+  content: url(img/Polygon\ 5.svg);
+  display: block;
+  position: absolute;
+  top: -4rem;
+}
+
+.third-board {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+  background-color: #535ED3;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #FAFAFA;
+}
+
+.third-board::before {
+  content: url(img/Polygon\ 6.svg);
+  display: block;
+  position: absolute;
+  top: -4rem;
+}
+
+.fourth-board {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+  background-color: #269D8B;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #FAFAFA;
+  position: relative;
+}
+
+.fourth-board::before {
+  content: url(img/Rectangle\ 38.svg);
+  display: block;
+  position: absolute;
+  top: -4rem;
+}
+
+.fith-board {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 3rem;
+  background-color: #1E1E1E;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #FAFAFA;
+  position: relative;
+}
+
+.fith-board::before {
+  content: url(img/Star\ 1.png);
+  display: block;
+  position: absolute;
+  top: -4rem;
+}
+
+a:link,
+a:active {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+
+a:hover,
+a:visited {
+  color: #7ba83396;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.man {
+  background-color: #D3647B;
+  width: 8rem;
+  height: 10rem;
+  display: flex;
+  padding-top: 15rem;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+}
+
+.man-1 {
+  background-color: #AC6ACB;
+}
+
+.man-2 {
+  background-color: #535ED3;
+}
+
+.man-3 {
+  background-color: #269D8B;
+}
+
+.image-container {
+  max-width: 70rem;
+  text-align: center;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotate(80deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width:48em) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    flex-direction: column;
+
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  .img {
+    width: 50%;
+    height: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .first-board::before {
+    content: url(img/res/Ellipse\ 12.svg);
+    width: 1000%;
+    display: block;
+    position: absolute;
+    top: -3rem;
+  }
+
+  .second-board::after {
+    content: url(img/res/Polygon\ 9.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+
+  .third-board::before {
+    content: url(img/res/Polygon\ 10.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+
+  .fourth-board::before {
+    content: url(img/res/Rectangle\ 42.svg);
+    display: block;
+    position: absolute;
+    top: -4rem;
+  }
+
+  .fith-board::before {
+    content: url(img/res/Star\ 1.svg);
+    display: block;
+    position: absolute;
+    width: 20px;
+    top: -3rem;
+  }
+
+}
