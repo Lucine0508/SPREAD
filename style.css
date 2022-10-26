@@ -230,6 +230,20 @@ a:visited {
 @media (max-width:48em) {
   html {
     font-size: 50%;
+    
+    
+  }
+
+  @media print {
+    div {
+      background-color: white;
+      font-family: serif;
+      font-size: 4.4rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: #c1c1c1
+      padding: 0.5in;
+    }
   }
 
   main {
